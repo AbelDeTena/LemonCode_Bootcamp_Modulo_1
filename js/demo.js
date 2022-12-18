@@ -1,13 +1,5 @@
-var update = document.getElementById("update"),
-foto = document.getElementById("foto"),
-nombre = document.getElementById("iname"),
-apellido = document.getElementById("surname");
-
-
-update.addEventListener("click", pantalla);
-
-function pantalla(){
-    console.log("Hola "+ nombre.value + " " + apellido.value);
-};
+document.getElementById("foto").src = "/assets/images/user-photo.png"
+document.getElementById("iname").value = "Abel";
+document.getElementById("surname").value = "De Tena Torres"
 
 
