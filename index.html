@@ -1,0 +1,82 @@
+<!-- objetivos:
+-crear una estructura html y css similar. 
+-estructurar los ficheros en sus carpetas correspondientes (css, js e img)
+-crear un fichero js que contenga el código necesario para:
+  -rellenar los input con tu nombre y apellido. 
+  -insertar una imagen de perfil.
+opcional:
+-agregar un botón y que muestre por consola el contenido de uno de los input  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600&family=Lexend+Deca&family=Roboto+Condensed:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Practica modulo 01</title>
+  </head>
+  <body>
+    <main>
+      <!-- Formulario -->
+      <form class="formulario">
+        <!-- Imagen -->
+        <div class="imagen">
+          <label for="foto" class="imagen__label">
+            <img
+              src="/assets/images/user-photo.png"
+              alt="Click para subir foto de perfil"
+              title="Subir foto de perfil"
+            />
+          </label>
+          <input
+            type="file"
+            id="foto"
+            accept="image/jpeg , image/jpg , image/png"
+          />
+        </div>
+        <!-- Nombre -->
+        <div class="nombre">
+          <label for="iname" class="nombre__label">Nombre</label>
+          <input
+            autofocus
+            tabindex="1"
+            type="text"
+            id="iname"
+            placeholder="Mi nombre"
+            class="nombre__input"
+            required
+          />
+        </div>
+        <!-- Apellidos -->
+        <div class="apellidos">
+          <label for="surname" class="apellidos__label">Apellidos</label>
+          <input
+            tabindex="2"
+            type="text"
+            id="surname"
+            placeholder="Mi apellido"
+            class="apellidos__input"
+            required
+          />
+        </div>
+        <!-- Enviar -->
+        <div class="enviar">
+          <input          
+            tabindex="3"
+            value="Update"
+            type="button"
+            id="update"
+            class="enviar__boton"
+          />
+        </div>
+      </form>
+    </main>
+    <!-- JavaScrip -->
+    <script src="/js/demo.js"></script>
+  </body>
+</html>
